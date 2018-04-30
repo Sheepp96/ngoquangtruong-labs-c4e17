@@ -9,7 +9,7 @@ db = client.get_default_database()
 posts = db["customers"]
 
 ref_count = []
-ref_names = ["Events", "Advertisements", "Word of mouth"]
+ref_names = ["events", "ads", "wom"]
 
 for ref in ref_names:
     count = posts.find({'ref' : ref}).count()
